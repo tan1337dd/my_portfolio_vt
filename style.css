@@ -1,0 +1,313 @@
+/* Стили для финального этапа 4 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка с целями сбоку */
+header {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+h1 {
+    color: #ff6b9d;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #ff6b9d, #ff9a9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: #cccccc;
+    font-size: 1.3em;
+}
+
+/* Блок целей сбоку */
+.goals-side {
+    background: rgba(255, 107, 157, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 250px;
+    border-left: 4px solid #ff6b9d;
+}
+
+.goals-side h3 {
+    color: #ff6b9d;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.goals-side ul {
+    list-style: none;
+}
+
+.goals-side li {
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #e0e0e0;
+}
+
+.goals-side li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #ff6b9d;
+}
+
+/* Образование посередине */
+.education-center {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-top: 4px solid #ff6b9d;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education-center h2 {
+    color: #ff6b9d;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+.edu-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.edu-item {
+    flex: 1;
+    min-width: 200px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.edu-item strong {
+    display: block;
+    color: #ff9a9e;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.edu-item p {
+    color: #e0e0e0;
+    font-size: 1.1em;
+}
+
+/* Основной контент с сеткой */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.skills {
+    grid-column: 1 / -1;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.current {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.contact {
+    background: rgba(107, 91, 255, 0.15);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(107, 91, 255, 0.3);
+}
+
+/* Секции */
+section, aside {
+    padding: 25px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    color: #ff6b9d;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h3 {
+    color: #ff9a9e;
+    margin-bottom: 15px;
+}
+
+/* Список навыков */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 107, 157, 0.3);
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-tag {
+    background: rgba(255, 107, 157, 0.2);
+    color: #ff6b9d;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+ul {
+    list-style: none;
+}
+
+.skills ul li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #e0e0e0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skills ul li:last-child {
+    border-bottom: none;
+}
+
+.skills ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ff6b9d;
+}
+
+/* Список изучения */
+.learning-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.learning-list li:last-child {
+    border-bottom: none;
+}
+
+.learning-icon {
+    font-size: 1.5em;
+    background: rgba(255, 107, 157, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Контакты */
+.contact-info p {
+    padding: 8px 0;
+    color: #cccccc;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #888;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    
+    .goals-side {
+        width: 100%;
+    }
+    
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .edu-box {
+        flex-direction: column;
+    }
+    
+    .edu-item {
+        min-width: 100%;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+}
